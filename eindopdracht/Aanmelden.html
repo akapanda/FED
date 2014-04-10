@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class=“no-js”>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="CMD Intranet: Informatie over de opleiding CMD">
+	<meta name="keywords" content="CMDA, HVA, Jurrien, FED1">
+	<meta name="author" content="Jurrien Meyrahn, 500664514">
+	<link href="style.css" rel="stylesheet" />
+	<script src="modernizr.custom.65094.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+	<title>CMD - Opleiding</title>
+</head>
+<body>
+	<header>
+		<img src="media/logo.jpg" alt="CMD Amsterdam">
+		<nav>
+			<ul>
+				<li>Home</li>
+				<li><a href="opleiding.html">Opleiding</a></li>
+				<li>Onderwijsprogramma</li>
+				<li>Organisatie</li>
+				<li><a href="aanmelden.html">Stages en Projecten</a></li>
+			</ul>
+		</nav>
+		<nav>
+			<ul>
+				<li id="linkProject">Projecten</li>
+				<li id="linkStage">Stages</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- content-HTML door Jurrien begint hier -->
+	<form>
+		<h1>Aanmelden</h1>
+		<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+		Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+		lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+		<blockquote>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+		Amsterdam.</blockquote>
+		<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+		Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+		Voor vragen of opmerkingen kunt u <a href="https://cmd.dmci.hva.nl/NL/Paginas/default.aspx">contact</a> met ons op.</p>	
+		<fieldset>
+			<legend>Contactgegevens</legend>
+			<ul>
+				<li><label for="naam">Naam: </label>
+				<input type="text" id="naam"></li>
+				<li><label for="bedrijf">Bedrijf: </label>
+				<input type="text" id="bedrijf"></li>
+				<li><label for="adres">Adres: </label>
+				<input type="text" id="adres">
+				<input type="number" id="bedrijfAdresNummer"></li>
+				<li><label for="postcode">Postcode: </label>
+				<input type="text" id="postcode"></li>
+				<li><label for="plaats">Plaats: </label>
+				<select id="plaats">
+				<option value="amsterdam">Amsterdam</option>
+				<option value="rotterdam">Rotterdam</option>
+				<option value="maastricht">Maastricht</option>
+				<option value="hoorn">Hoorn</option>
+				</select></li>
+				<li><label for="tel">Telefoonnummer: </label>
+				<input type="tel" id="tel"></li>
+				<li><label for="E-mail">E-mail</label>
+				<input type="email" id="E-mail"></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend>Ik wil mijn aanmelden</legend>
+			<ul>
+				<li><input type="radio" name="typeAanmelding" value="project">Voor een project</li>
+				<li><input type="radio" name="typeAanmelding" value="stage">Als stagebrijf</li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend id="project">Project</legend>
+			<ul>
+				<li><label for="titel">Titel: </label>
+				<input type="text" id="titel">
+				<li><label for="opdrachtOmschrijving">Opdracht omschrijving: </label>
+				<input type="text" id="opdrachtOmschrijving">
+				<li><label for="doelgroepOmschrijving">Doelgroep omschrijving: </label>
+				<input type="text" id="doelgroepOmschrijving">
+				<li><label for="doelstelling">Doelstelling/intentie van het project: </label>
+				<input type="text" id="doelstelling">
+			</ul>
+			Looptijd
+			<ul>
+				<li><label for="startDatum">Van </label>
+				<input type="date" id="startDatum">
+				<label for="eindDatum"> tot </label>
+				<input type="date" id="eindDatum"></li>
+			</ul>
+			Geschikt voor
+			<ul>
+				<li><input type="checkbox" name="geschiktVoor" value="propedeuse">Eerstejaars studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="v1">Tweedejaars studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="v2">Derdejaars studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="afstudeerjaar">Afstudeer studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="onbekend">Onbekend</li>
+				<li><label for="projectOpmerking">Opmerking: </label>
+				<input type="text" id="projectOpmerking"></li>
+			</ul>
+		</fieldset>
+		<fieldset>
+			<legend id="stage">Stage</legend>
+			Geschikt voor
+			<ul>
+				<li><input type="checkbox" name="stageGeschiktVoor" value="v1">Tweedejaars studenten</li>
+				<li><input type="checkbox" name="stageGeschiktVoor" value="afstudeerjaar">Afstudeer studenten</li>
+				<li><input type="checkbox" name="stageGeschiktVoor" value="onbekend">Onbekend</li>
+			</ul>
+			Hoe lang is de stage?
+			<ul>
+				<li><input type="radio" name="stageLengte" value="10weken">10 weken</li>
+				<li><input type="radio" name="stageLengte" value="20weken">20 weken</li>
+				<li><label for="stageDatum">Begin datum: </label>
+				<input type="date" id="stageDatum"></li>
+			</ul>
+			<ul>
+				<li><label for="stagewerkzaamheden">Beschrijving stagewerkzaamheden: </label>
+				<input type="text" id="stagewerkzaamheden"></li>
+				<li><label for="stageBedrijf">Bedrijfsnaam: </label>
+				<input type="text" id="stageBedrijf"></li>
+				<li><label for="stageAdres">Adres: </label>
+				<input type="text" id="stageAdres">
+				<input type="number" id="nummer"></li>
+				<li><label for="stagePostcode">Postcode: </label>
+				<input type="text" id="stagePostcode"></li>
+				<li><label for="stagePlaats">Plaats: </label>
+				<select id="stagePlaats">
+				<option value="amsterdam">Amsterdam</option>
+				<option value="rotterdam">Rotterdam</option>
+				<option value="maastricht">Maastricht</option>
+				<option value="hoorn">Hoorn</option>
+				</select></li>
+				<li><label for="sector">Sector: </label>
+				<input type="text" id="sector"></li>
+				<li><label for="coreBusiness">Core Business: </label>
+				<input type="text" id="coreBusiness"></li>
+				<li><label for="stageOpmerking">Opmerking: </label>
+				<input type="text" id="stageOpmerking"></li>
+			</ul>
+			<button>Verzenden</button>
+		</fieldset>
+	</form>
+	<!-- content-HTML door Jurrien eindigt hier -->
+	<aside>
+	<h1><a href="#">Laatste mededelingen</a></h1>
+	<section>
+		<h1>Teamproject - Usabilitylab rooster</h1>
+		<p>
+			<time datetime="2012-02-14">2012-2-14</time>
+			<span><a href="#">A.W.M. Feleus</a></span>
+			Beste studenten, Aanstaande maandag is het instructiecollege voor het usabilitylab en vanaf dinsdag starten de eerste teams met testen. In jullie rooster is aangegeven wanneer jullie gaan testen en kunnen jullie ook zien met welk team. Let er op dat ...
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	<section>
+		<h1>V2 assessments rooster Blok 3</h1>
+		<p>
+			<time datetime="2012-02-15">2012-2-15</time>
+			<span><a href="#">J.B. Wijnmaalen</a></span>
+			Het V2 assessment rooster voor Blok 3 kan je  downloaden van de vakpagina.
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	<section>
+		<h1>Portfoliogesprekken V1</h1>
+		<p>
+			<time datetime="2012-02-27">2012-2-27</time>
+			<span><a href="#">H.H.G. Konickx</a></span>
+			Het rooster voor mijn portfoliogesprekken staat online bij SLC Blok 3. Let op! Er kan nog eea veranderen. Houd het intranet in de gaten.
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	<section>
+		<h1>Mediasociologie: tentamen en huiswerk week 7</h1>
+		<p>
+			<time datetime="2012-02-27">2012-2-27</time>
+			<span><a href="#">T. Ploeg</a></span>
+			Beste studenten Mediasociologie, Het tentamen Mediasociologie vindt plaats op maandag 26 maart van 16.50u tot 18.30u. Locatie wordt nog bekend gemaakt. Voor...
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	<section>
+		<h1>Verdien 2 SRP!</h1>
+		<p>
+			<time datetime="2012-02-29">2012-2-29</time>
+			<span><a href="#">L.C.D.J. van der Vlies</a></span>
+			Interesse in online marketing? Verdien 2 SRP bij een project voor Knowhowww, een online marketingbureau in Amsterdam. Een van de projecten voor dit bureau is Pet Plan, een verzekeringsmaatschappij voor huisdieren. Knowhowww wil graag een viral ...
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	
+	
+	<h1><a href="#">Uitagenda</a></h1>
+	<section>
+		<h1>Fiber Festival</h1>
+		<h1>Op <time datetime="2012-03-24">2012-3-24</time> in het Trouw gebouw</h1>
+		<p>
+			<span><a href="#">M.S. t Hooft</a></span>
+			 Audiovisueel netwerkfestival in Trouw Amsterdam. Meer info: http://www.fiber-space.nl
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	<section>
+		<h1>Appril</h1>
+		<h1>Van <time datetime="2012-04-02">2012-4-2</time> tot <time datetime="2012-04-30">2012-4-30</time> in Amsterdam</h1>
+		<p>
+			<span><a href="#">M. Blekemolen</a></span>
+			 Apps zijn niet meer weg te denken uit het dagelijks leven van miljoenen gebruikers. Amsterdam heeft het ideale klimaat voor app ontwikkelaars. De stad is hard op weg om internationaal door te breken als Appsterdam, de gelijknamige organisatie die ook ...
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+	<section>
+		<h1>Mobilism 2012</h1>
+		<h1>Van <time datetime="2012-05-10">2012-5-10</time> tot <time datetime="2012-05-11">2012-5-11</time> in Tuschinski</h1>
+		<p>
+			<span><a href="#">M.S. t Hooft</a></span>
+			 Mobile is becoming increasingly important to web designers and developers because users expect a site to work on their phones. Simultaneously, the web is becoming increasingly important to the mobile world because it is the only way to deploy an ...
+			<a href="#">lees verder</a>
+		</p>
+	</section>
+
+	<a class="twitter-timeline" href="https://twitter.com/CMDAmsterdam" data-widget-id="453969979944095744">Tweets van @CMDAmsterdam</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+</aside>
+<footer>
+
+	<h1>Sitemap</h1>
+
+		<ul>
+			<li class="sitemapHeader">Opleiding
+				<ul>
+					<li>Visie & Beleid</li>
+					<li>Opbouw Studieprogramma</li>
+					<li>Competenties</li>
+					<li>Diploma</li>
+					<li>Beroepen</li>
+				</ul>
+			</li>
+			<li class="sitemapHeader">Onderwijsprogramma
+				<ul>
+					<li>Mededelingen</li>
+					<li>Uitagenda</li>
+					<li>Propedeuse</li>
+					<li>Verdieping 1</li>
+					<li>Verdieping 2</li>
+					<li>Afstuderen</li>
+				</ul>
+			</li>
+			<li class="sitemapHeader">Organisatie
+				<ul>
+					<li>Contact</li>
+					<li>Blog</li>
+					<li>Docenten</li>
+					<li>Onderwijsbureau</li>
+					<li>Stagebureau</li>
+					<li>Buitenlandbureau</li>
+					<li>Examencommissie</li>
+					<li>Decaan</li>
+				</ul>
+			</li>
+			<li class="sitemapHeader">Stages en Projecten
+				<ul>
+					<li>Stages</li>
+					<li>Projecten</li>
+				</ul>
+			</li>
+		</ul>
+	<section>
+			<form>
+				<label for="zoeken">Zoeken: </label>
+				<input type="text" id="zoeken">
+				<input type="submit">
+			</form>
+			<section>
+			<h1>Contact</h1>
+			CMD Amsterdam
+			Bezoekadres: Gebouw Theo Thijssenhuis (TTH), Wibautstraat 2-4, 1091 GM Amsterdam
+			Postadres: Postbus 1025, 1000 BA Amsterdam
+			Telefoon: 020 595 1855
+			Email: <a href="#">info@cmd.hva.nl</a>
+			RSS: <a href="#">Feed intranet</a>
+			</section>
+			<section>
+			<h1>About</h1>
+			CMD Amsterdam is een ontwerp opleiding voor Interactieve Media.
+			Op de opleiding Communication & Multimedia Design (CMD) Amsterdam leer je alles over het ontwerpen van online interactieve media. Dit betekent begrijpen, bedenken en maken van interactieve mediatoepassingen zoals websites, mobiele applicaties en interactieve televisie. 
+			</section>
+			<section>
+			<h1>Credits</h1>
+			© 2007 Hogeschool van Amsterdam - DMCI - CMD Amsterdam
+			<a href="#">Geef ons feedback</a>
+			</section>
+		</section>
+</footer>
+</body>
+</html>
