@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Informatie over aanmelden voor CMD">
+<meta name="keywords" content="CMDA, HVA, Jurrien, FED1">
+<meta name="author" content="Jurrien Meyrahn, 500664514">
+<link href="aanmelden_css.css" media="screen" rel="stylesheet" type="text/css" />
+<title>CMD - Aanmelden</title>
+</head>
+<body>
+	<article>
+		<h1>Aanmelden</h1>
+		<p>Bent u geinteresseerd in samenwerken met CMD Amsterdam? Dat kan!
+		Tijdens de opleiding werken studenten aan projecten voor echte opdrachtgevers. Ook
+		lopen de studenten stage, in het tweede en afstudeerjaar.</p>
+		<p><i>CMD Amsterdam zoekt altijd naar positieve verbindingen met de creatieve stad
+		Amsterdam.</i></p>
+		<p>Voor het aanmelden van stageplekken of projecten kunt u onderstaand formulier invullen.
+		Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.
+		Voor vragen of opmerkingen kunt u <a href="https://cmd.dmci.hva.nl/NL/Paginas/default.aspx">contact</a> met ons op.</p>	
+		<form>
+			<fieldset>
+				<legend>Contactgegevens</legend>
+				<ul>
+				<li><label for="naam">Naam: </label>
+				<input type="text" id="naam"></li>
+				<li><label for="bedrijf">Bedrijf: </label>
+				<input type="text" id="bedrijf"></li>
+				<li><label for="adres">Adres: </label>
+				<input type="text" id="adres">
+				<input type="number" id="bedrijfAdresNummer"></li>
+				<li><label for="postcode">Postcode: </label>
+				<input type="text" id="postcode"></li>
+				<li><label for="plaats">Plaats: </label>
+				<select id="plaats"></li>
+				<option value="amsterdam">Amsterdam</option>
+				<option value="rotterdam">Rotterdam</option>
+				<option value="maastricht">Maastricht</option>
+				<option value="batavia">Bataviastad</option>
+				</select>
+				<li><label for="tel">Telefoonnummer: </label>
+				<input type="tel" id="tel"></li>
+				<li><label for="E-mail">E-mail</label>
+				<input type="email" id="E-mail"></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Ik wil mijn aanmelden</legend>
+				<ul>
+				<li><input type="radio" name="typeAanmelding" value="project">Voor een project</li>
+				<li><input type="radio" name="typeAanmelding" value="stage">Als stagebrijf</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Project</legend>
+				<ul>
+				<li><label for="titel">Titel: </label>
+				<input type="text" id="titel">
+				<li><label for="opdrachtOmschrijving">Opdracht omschrijving: </label>
+				<input type="text" id="opdrachtOmschrijving">
+				<li><label for="doelgroepOmschrijving">Doelgroep omschrijving: </label>
+				<input type="text" id="doelgroepOmschrijving">
+				<li><label for="doelstelling">Doelstelling/intentie van het project: </label>
+				<input type="text" id="doelstelling">
+				</ul>
+				Looptijd
+				<ul>
+				<li><label for="startDatum">Van </label>
+				<input type="date" id="startDatum">
+				<label for="eindDatum"> tot </label>
+				<input type="date" id="eindDatum"></li>
+				</ul>
+				Geschikt voor
+				<ul>
+				<li><input type="checkbox" name="geschiktVoor" value="propedeuse">Eerstejaars studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="v1">Tweedejaars studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="v2">Derdejaars studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="afstudeerjaar">Afstudeer studenten</li>
+				<li><input type="checkbox" name="geschiktVoor" value="onbekend">Onbekend</li>
+				<li><label for="projectOpmerking">Opmerking: </label>
+				<input type="text" id="projectOpmerking"></li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend>Stage</legend>
+				Geschikt voor
+				<ul>
+				<li><input type="checkbox" name="stageGeschiktVoor" value="v1">Tweedejaars studenten</li>
+				<li><input type="checkbox" name="stageGeschiktVoor" value="afstudeerjaar">Afstudeer studenten</li>
+				<li><input type="checkbox" name="stageGeschiktVoor" value="onbekend">Onbekend</li>
+				</ul>
+				Hoe lang is de stage?
+				<ul>
+				<li><input type="radio" name="stageLengte" value="10weken">10 weken</li>
+				<li><input type="radio" name="stageLengte" value="20weken">20 weken</li>
+				<li><label for="stageDatum">Begin datum: </label>
+				<input type="date" id="stageDatum"></li>
+				</ul>
+				<ul>
+				<li><label for="stagewerkzaamheden">Beschrijving stagewerkzaamheden: </label>
+				<input type="text" id="stagewerkzaamheden"></li>
+				<li><label for="stageBedrijf">Bedrijfsnaam: </label>
+				<input type="text" id="stageBedrijf"></li>
+				<li><label for="stageAdres">Adres: </label>
+				<input type="text" id="stageAdres">
+				<input type="number" id="nummer"></li>
+				<li><label for="stagePostcode">Postcode: </label>
+				<input type="text" id="stagePostcode"></li>
+				<li><label for="stagePlaats">Plaats: </label>
+				<select id="stagePlaats">
+				<option value="amsterdam">Amsterdam</option>
+				<option value="rotterdam">Rotterdam</option>
+				<option value="maastricht">Maastricht</option>
+				<option value="batavia">Bataviastad</option>
+				</select></li>
+				<li><label for="sector">Sector: </label>
+				<input type="text" id="sector"></li>
+				<li><label for="coreBusiness">Core Business: </label>
+				<input type="text" id="coreBusiness"></li>
+				<li><label for="stageOpmerking">Opmerking: </label>
+				<input type="text" id="stageOpmerking"></li>
+				</ul>
+			</fieldset>
+			<button>Verzenden</button>
+		</form>
+	</article>
+</body>
+</html>
